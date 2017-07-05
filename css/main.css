@@ -1,0 +1,248 @@
+/*** globle class . ***/
+
+.red {
+    background: red;
+}
+.tred {
+    color: red;
+}
+.blue {
+    color: blue;
+}
+.purple {
+    color: purple;
+}
+.green {
+    color: green;
+}
+.bgyellow {
+    background: yellow;
+}
+.bgblue {
+    background: #51CEE2;
+}
+.c-box-left .label {
+    margin-left: 20px;
+    text-transform: uppercase;
+}
+/*** trantions . ***/
+
+.name:hover {
+    font-size: 1.5em;
+    transition: all .5s;
+}
+img:hover {
+    transform: scale(1.1);
+    transition: all .5s;
+}
+.glyphicon:hover {
+    opacity: .8;
+    font: 1.1em;
+    transition: all .5s;
+}
+.s-project:hover {
+    transform: scale(1.1);
+    opacity: .8;
+    transition: all .5s;
+}
+.all-t:hover,
+.nike-app:hover,
+.add-project:hover {
+    background: silver;
+    transition: all .1s ease-in;
+    font: 1.1em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 5px;
+}
+.settings span:hover {
+    //font-size: 23px;
+}
+.main {
+    display: flex;
+}
+.profile-container {
+    background: #fff;
+    width: 30%;
+    height: 100vh;
+    border-right: 1px solid #e4e4e4;
+    text-align: center;
+}
+.settings {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.settings span {
+    font-size: 20px;
+    color: #BEC6D2;
+}
+.profile {} .profile img {
+    border-radius: 50%;
+    width: 75px;
+    border: 1px solid #BEC6D2;
+    padding: 3px;
+}
+.profile .name {
+    font-size: 1.2em;
+    color: #4a4a4a;
+}
+.profile .designation {
+    font-size: 1em;
+    font-weight: 300;
+    color: #BEC6D2;
+}
+.search {
+    margin: 50px 10px;
+}
+.search form {
+    width: 80%;
+    margin: 0 auto;
+}
+.search span {
+    color: #BEC6D2;
+    background: #fff;
+    border-radius: 20px 0px 0px 20px;
+}
+.search input {
+    border-left: none;
+    padding-left: 0;
+    border-radius: 0px 20px 20px 0px;
+}
+.search input::placeholder {
+    color: #BEC6D2;
+}
+.projects {
+    text-align: left;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #BEC6D2;
+    padding-left: 40px;
+}
+.projects .add-project,
+.s-project,
+.nike-app {
+    height: 50px;
+    line-height: 50px;
+}
+.projects .all-t {
+    height: 30px;
+    line-height: 30px;
+}
+.projects span {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.all-t .c-badge {
+    float: right;
+}
+.s-project {
+    background: #37C973;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.s-project .glyphicon-triangle-bottom {
+    position: absolute;
+    color: #37C973;
+    bottom: top;
+    top: 88%;
+    font-size: 1.4em;
+    left: 10px;
+}
+.content {
+    background: #fff;
+    width: 70%;
+    height: 100vh;
+    padding-left: 0;
+}
+.content .content-header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e4e4e4;
+    padding-top: 22px;
+}
+.content-header .date {
+    color: #c3c3c3;
+    font-weight: 400;
+}
+.date span {
+    color: #37C973;
+}
+.add-task .c-task {
+    background: #37C973;
+    padding: 10px 21px;
+    border-radius: 50px;
+    display: inline-block;
+    color: #fff;
+}
+.content .content-header span {
+    margin-right: 20px;
+}
+.content .c-box {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 10px 10px 10px 30px;
+}
+.c-box .c-box-left {
+    flex-grow: 1;
+}
+.c-box-left img {
+    float: left;
+    width: 50px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 20px;
+}
+.c-box-left .c-heading {
+    padding-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #0e0c0c;
+    line-height: 1rem;
+}
+.c-box-left .c-name {
+    line-height: 1;
+}
+.c-box input {
+    align-self: center;
+    color: #BEC6D2;
+}
+.date {
+    color: black;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding-left: 35px;
+}
+@media only screen and (max-width: 767px) {
+    .main {
+        flex-direction: column;
+    }
+    .content .c-box {
+        padding: 0;
+        flex-direction: column;
+    }
+    .profile-container {
+        border: none;
+        width: 100%;
+        height: auto;
+    }
+    .content {
+        width: 100%;
+        height: auto;
+    }
+    .content .content-header {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .c-box-left .c-heading {
+        line-height: 2rem;
+    }
+    .c-box-left .label {
+        display: none;
+    }
+}
